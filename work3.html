@@ -15,25 +15,25 @@
       <p>
         Hypertext Markup Language (<span>HTML</span>) is the standard markup language for creating web pages and web applications. <br>
         Web browsers receive <span>HTML</span> documents from a web server or from local storage and render the documents into multimedia web pages. <span>HTML</span> describes the structure of a web page semantically and originally included cues for the appearance of the document.
-        <span>HTML</span> elements are the building blocks of <span>HTML</span> pages. With <span>HTML</span> constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. <span>HTML</span> elements are delineated by <em>tags</em>, written using angle brackets. Tags such as<mark> &lt;img /></mark> and <mark>&lt;input /></mark> directly introduce content into the page. Other tags such as<mark>&lt;p></mark> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the <span>HTML</span> tags, but use them to interpret the content of the page.
+        <span>HTML</span> elements are the building blocks of <span>HTML</span> pages. With <span>HTML</span> constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. <span>HTML</span> elements are delineated by <em>tags</em>, written using angle brackets. Tags such as<mark> <sp> &lt;img /> </sp> </mark> and <mark> <sp> &lt;input /></sp> </mark> directly introduce content into the page. Other tags such as<mark> <sp>&lt;p> </sp> </mark> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the <span>HTML</span> tags, but use them to interpret the content of the page.
       </p>
       <hr>
       <h2>Markup</h2>
-      <p><span>HTML</span> markup consists of several key components, including those called tags (and their <em>attributes</em>), character-based <em>data types, character references and entity references.</em> <span>HTML</span> tags most commonly come in pairs like <mark>&lt;h1></mark> and <mark>&lt;/h1></mark>, although some represent empty elements and so are unpaired, for example <mark>&lt;img></mark>. The first tag in such a pair is the <em>start tag</em>, and the second is the <em>end tag</em> (they are also called <em>opening tags</em> and <em>closing tags</em>).
+      <p><span>HTML</span> markup consists of several key components, including those called tags (and their <em>attributes</em>), character-based <em>data types, character references and entity references.</em> <span>HTML</span> tags most commonly come in pairs like <mark> <sp>&lt;h1></sp> </mark> and <mark><sp>&lt;/h1></sp> </mark>, although some represent empty elements and so are unpaired, for example <mark><sp>&lt;img> </sp></mark>. The first tag in such a pair is the <em>start tag</em>, and the second is the <em>end tag</em> (they are also called <em>opening tags</em> and <em>closing tags</em>).
 
         Another important component is the <span>HTML</span> document type declaration, which triggers standards mode rendering.
         The following is an example of the classic "Hello, World!" program:</p>
         <div class="code">
         <p class="codetext"> 
-            &lt;!DOCTYPE html>
+            <sp>&lt;!DOCTYPE html>
             &lt;html>
             &emsp;&emsp;&lt;head>
-            &emsp;&emsp;&emsp;&emsp;&lt;title>This is a title&lt;/title>
-            &emsp;&emsp;&lt;/head>
+            &emsp;&emsp;&emsp;&emsp;&lt;title></sp>This is a title<sp>&lt;/title></sp>
+            <sp>&emsp;&emsp;&lt;/head>
             &emsp;&emsp;&lt;body>
-            &emsp;&emsp;&emsp;&emsp;&lt;p>Hello world!&lt;/p>
-            &emsp;&emsp;&lt;/body>
-            &lt;/html>
+            &emsp;&emsp;&emsp;&emsp;&lt;p></sp> Hellow world!<sp>&lt;/p></sp>
+            <sp>&emsp;&emsp;&lt;/body>
+            &lt;/html></sp>
         </p>
     </div>
     <br>
@@ -72,7 +72,9 @@
         text-align: left;
         white-space: pre-line;
         font-size: 20px;
-
+    }
+    sp{
+        color: brown;
     }
 
     span {
