@@ -8,9 +8,11 @@
     <title>Card game</title>
 </head>
 <body>
+    <div class="wapper">
+
     <div class="gard">
 
-        <h2>Player 1:</h2>
+        <h3>Player 1:</h3>
         <p>
             <mark>2&clubs;</mark>
             <mark><span class="red"> 9&hearts;</span></mark>
@@ -20,7 +22,7 @@
             <mark>J&clubs;</mark>
         </p>
         
-        <h2>Player 2:</h2>
+        <h3>Player 2:</h3>
         <p>
             <mark><span class="red"> 3&hearts;</span></mark>
             <mark>A&clubs;</mark>
@@ -29,9 +31,10 @@
             <mark>8&spades;</mark>
             <mark><span class="red"> 3&hearts;</span></mark>
         </p>
-       
-       
+             
     </div>
+
+</div>
 </body>
 <style>
 
@@ -41,39 +44,40 @@
         box-sizing: border-box;
         
     }
-    .gard{
+    .wapper{
+        display: flex;
+        min-height: 100%;
+        overflow: hidden;
+        flex-direction: column;
         
-        width: 480px;
-        height: 346px;
-        padding: 20px;
-        margin: 20px;
+    }
+    .gard{
+        flex: auto;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0px 15px;
         background-color: rgb(231, 225, 225);
-        line-height: 0.5; /*Отступы между строк*/
+        line-height: 1.2; /*Отступы между строк*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+    }
+    
+    @media (max-width: 480px){
+        .gard{
+            max-width: none;
+        }
     }
     .red{
         color: red;
     }
     
-   
-    h2{
-        font-family: sans-serif;
-    }
-    p{
-        font-size: 3rem;
-    }
+       
    mark{
     background-color: darkgray;
    }
-   @media (max-width: 480px) {
-    .gard{
-        flex-direction: column;
-    }
-    p{
-       position: relative;
-       font-size: 2rem;
-    }
+   
        
-}
+
     
 </style>
 </html>
