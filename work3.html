@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_130838.ico" type="image/x-icon">
+    <title>HTML Tutorial</title>
+  </head>
+  <body>
+    <div class="text">
+      <h1>HTML Tutorial</h1>
+      <hr />
+      <h2>What is HTML?</h2>
+      <p>
+        Hypertext Markup Language (<span>HTML</span>) is the standard markup language for creating web pages and web applications. <br>
+        Web browsers receive <span>HTML</span> documents from a web server or from local storage and render the documents into multimedia web pages. <span>HTML</span> describes the structure of a web page semantically and originally included cues for the appearance of the document.
+        <span>HTML</span> elements are the building blocks of <span>HTML</span> pages. With <span>HTML</span> constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. <span>HTML</span> elements are delineated by <em>tags</em>, written using angle brackets. Tags such as<mark> &lt;img /></mark> and <mark>&lt;input /></mark> directly introduce content into the page. Other tags such as<mark>&lt;p></mark> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the <span>HTML</span> tags, but use them to interpret the content of the page.
+      </p>
+      <hr>
+      <h2>Markup</h2>
+      <p><span>HTML</span> markup consists of several key components, including those called tags (and their <em>attributes</em>), character-based <em>data types, character references and entity references.</em> <span>HTML</span> tags most commonly come in pairs like <mark>&lt;h1></mark> and <mark>&lt;/h1></mark>, although some represent empty elements and so are unpaired, for example <mark>&lt;img></mark>. The first tag in such a pair is the <em>start tag</em>, and the second is the <em>end tag</em> (they are also called <em>opening tags</em> and <em>closing tags</em>).
+
+        Another important component is the <span>HTML</span> document type declaration, which triggers standards mode rendering.
+        The following is an example of the classic "Hello, World!" program:</p>
+        <div class="code">
+        <p class="codetext"> 
+            &lt;!DOCTYPE html>
+            &lt;html>
+            &emsp;&emsp;&lt;head>
+            &emsp;&emsp;&emsp;&emsp;&lt;title>This is a title&lt;/title>
+            &emsp;&emsp;&lt;/head>
+            &emsp;&emsp;&lt;body>
+            &emsp;&emsp;&emsp;&emsp;&lt;p>Hello world!&lt;/p>
+            &emsp;&emsp;&lt;/body>
+            &lt;/html>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <p class="tags"><b>Tags:</b> <mark>CodingScripting</mark> <mark>head</mark> <mark>HTML</mark> <mark>Introduction to HTML</mark> <mark>Landing</mark> <mark>Links semantics</mark> <mark>Structure</mark> <mark>Text</mark></p>
+    </div>
+  </body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        background-color: rgb(231 229 229 / 80%);
+        text-align: center;
+        width: 60%;
+        padding: 20px 20px;
+        margin-top: 2%;
+        line-height: 1.7;
+    }
+
+    p {
+        text-align: left;
+        white-space: pre-line;
+        font-size: 20px;
+
+    }
+
+    span {
+        text-decoration: underline dotted;
+        
+    }
+    
+    mark{
+        background-color: #c0cac6;
+    }
+
+    .code {
+        width: 100%;
+        padding: 0px 0px 20px;
+        line-height: 1;
+        background-color: #c0cac6;
+    }
+
+    p.codetext {
+        text-align: justify;
+        padding-left: 10px;
+        /* white-space: pre; */
+        white-space: pre-line;
+    }
+    @media (max-width: 480px){
+        .text{
+            width: auto;
+        }
+    }
+</style>
+</html>

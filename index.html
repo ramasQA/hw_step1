@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_14247.ico" type="image/x-icon" />
+    <title>Home-Work</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="hard">
+            <h1>Home-Work</h1>
+        </div>
+        <div class="form">
+        <form action="work1.html" target="_blank">
+            <input type="submit" value="Work-1" />
+        </form>
+        <form action="work2-1.html" target="_blank">
+            <input type="submit" value="Work-2" />
+        </form>
+    
+        <form action="work3.html" target="_blank">
+            <input type="submit" value="Work-3" />
+        </form>
+    </div>
+    
+    </div>
+
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: monospace;
+    font-size: 1rem;
+       
+}
+.header{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.form{
+    display: flex;
+}
+
+input{
+    padding: 8px;
+    width: 106px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #8E43ED;
+    border-radius: 12px;
+    font-family: inherit;
+}
+
+@media (max-width: 480px) {
+    .header{
+        flex-direction: column;
+    }
+    .form{
+        flex-direction: column;
+    }
+    
+}
+
+    </style>
+</body>
+</html>
