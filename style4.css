@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rectangle {
+    counter-reset: li; 
+    list-style: none; 
+    font: 24px "Trebuchet MS", "Lucida Sans";
+    padding: 30px;
+    padding-right: 39px;
+    margin: 0 auto;
+    /* text-shadow: 0 1px 0 rgba(240, 170, 211, 0.5); */
+    max-width: 40%;
+    background: rgb(236,158,174);
+    }
+
+    .rectangle a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    margin: .5em 0 .5em 2.5em;
+    background: rgb(198,99,119);
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    }
+    .rectangle a:hover {
+        background: #d4bdcd;
+    }       
+    .rectangle a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.1em;
+    top: 50%;
+    margin-top: -1em;
+    background: rgb(198,99,119);
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    }
+    .rectangle a:after {
+    position: absolute;
+    content: ".";
+    border: .5em solid transparent;
+    left: -1.35em;
+    top: 21%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+    }
+    .rectangle a:hover:after {
+    left: -.5em;
+    border-left-color: rgb(198,99,119);
+    }
+    .rectangle mark{
+        background-color: rgb(158,53,75);
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -21px;
+        color: white;
+    }
+    @media (max-width: 1088px){
+        .rectangle{
+            max-width: 80%;
+        }
+    }
+
+    @media (max-width: 768px){
+        .rectangle{
+            font-size: 18px;
+            max-width: 80%;
+        }
+        .rectangle mark{
+            padding: 6px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: -21px;
+        }
+    }
+    @media (max-width: 480px){
+        .rectangle{
+            font-size: 12px;
+            max-width: none;
+        }
+        .rectangle mark{
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: -21px;
+        }
+    }
