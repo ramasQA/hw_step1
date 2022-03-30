@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.wapper{
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    
+}
+.gard{
+    flex: auto;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0px 15px;
+    background-color: rgb(231, 225, 225);
+    line-height: 1.2; /*Отступы между строк*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+@media (max-width: 880px){
+    .gard{
+        width: 80%;
+    }
+
+}
+@media (max-width: 480px){
+    .gard {
+        width: 100%;
+    }
+}
+.red{
+    color: red;
+}
+
+   
+mark{
+background-color: darkgray;
+}
